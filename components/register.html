@@ -1,0 +1,61 @@
+
+        <style>
+    .mtp_note{
+        background-color: #FFE4C4;
+        text-align: center;
+        padding: 10px;
+        font-size: 15px;
+    }
+    .fullwidth{width:100%; float:left; margin:10px 0; position: relative;}
+    </style>
+            <!--  <div class="login-logo"> <img class="" src=".png" alt=""></div>-->
+                        <div class="login-form">
+              <div>
+                    <p style="padding: 5px 5px;background-color: palevioletred;text-align: center;color: black;margin-bottom: 10px;">Web-Portal would be unavailable from 26th July 2019 8pm to 27th July 2019 8am for maintenance purposes. </p>
+                </div>
+        <div id="login-wrapper">
+                 <h4>Industry Login</h4>
+                <form name="signupForm">  
+                <fieldset>             
+
+                <ul>
+                    <li><label class="fullwidth">User Id:</label></li>
+                    <li>
+                        <div class="fullwidth" data-validate = "Username is required">
+                            <input name="username" type="text" placeholder="Enter User Id" ng-model="username" required focus>
+                            <div class="require"></div>
+                        </div>
+                    </li>
+                    <li><label class="fullwidth">Email:</label></li>
+                    <li>
+                        <div class="fullwidth" data-validate = "Username is required">
+                            <input name="username" type="text" placeholder="Enter Email Id" ng-model="email" required focus>
+                            <div class="require"></div>
+                        </div>
+                    </li>
+                    <li><label class="fullwidth">Password:</label></li>
+                    <li>
+                        <div class="fullwidth" data-validate = "Password is required">
+                            <input name="password" type="password" id="password" placeholder="Enter Password" ng-model="password" class="fullwidth" required>
+                            <div class="require"></div>
+                        </div>
+
+                    </li>
+
+                    <li><div class="fullwidth"><button class="subbtn" ng-click="register()" data-ng-disabled="signupForm.$invalid">
+							Register
+						</button></div></li>
+                    <li> <a href="http://localhost:8000/login">Login</a>|<a href="#">Forgot Password Click Here</a>|<a href="#">FAQ</a>
+                    </li>
+                </ul>
+</fieldset>
+                </form>
+        </div>
+                    <div class="fullwidth">
+                    <p class="mtp_note"><a ng-click="$back()">Home</a>|<a ng-click="$back()">Back</a></p>
+                    </div>
+            </div>
+
+        
+
+
